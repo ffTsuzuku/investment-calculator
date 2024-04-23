@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Form from './components/Form'
+import Table from './components/Table'
 
 const INITIAL_FORM_DATA = {
     initial_investment: null,
@@ -27,6 +28,7 @@ function App() {
                 <h1>React Investment Calculator</h1>
             </header>
             <Form on_update_form_value={update_form_value} />
+            <Table form_values={form_values} />
         </>
     )
 }
