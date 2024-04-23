@@ -7,21 +7,25 @@ const Form = ({ on_update_form_value }) => {
     const [duration, set_duration] = useState('')
 
     const update_initial_investment = (value) => {
+        value = Number(value)
         set_initial_investment(value)
         on_update_form_value('initial_investment', value)
     }
 
     const update_annual_investment = (value) => {
+        value = Number(value)
         set_annual_investment(value)
         on_update_form_value('annual_investment', value)
     }
 
     const update_expected_return = (value) => {
+        value = Number(value)
         set_expected_return(value)
         on_update_form_value('expected_return', value)
     }
 
     const update_duration = (value) => {
+        value = Number(value)
         set_duration(value)
         on_update_form_value('duration', value)
     }

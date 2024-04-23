@@ -19,10 +19,7 @@ const Table = ({ form_values }) => {
         duration,
     })
 
-    console.log(results)
-
     const body_jsx = results.map((data_point) => {
-        console.log(data_point)
         const {
             year,
             interest,
