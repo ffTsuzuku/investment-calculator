@@ -24,7 +24,10 @@ function App() {
     return (
         <>
             <header id='header'>
-                <img src='/investment-calculator-logo.png' />
+                <img
+                    alt='Logo Showing Money Bag'
+                    src='/investment-calculator-logo.png'
+                />
                 <h1>React Investment Calculator</h1>
             </header>
             <Form on_update_form_value={update_form_value} />
